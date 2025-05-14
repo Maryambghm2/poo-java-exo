@@ -1,4 +1,4 @@
-package org.example.exoChaise;
+package org.example.exo01Chaise;
 
 public class Main {
 
