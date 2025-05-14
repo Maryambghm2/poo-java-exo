@@ -1,6 +1,7 @@
 package org.example.exo02Film;
 
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -12,13 +13,13 @@ public class Main {
 //        SETTER FILM2
         film1.setTitre("La Haine'");
         film1.setRealisateur("Mathieu Kassovitz");
-        film1.setDateSortie("1995-05-31");
+        film1.setDateSortie(LocalDate.of(1995, 05, 31));
         film1.setGenre("Drame");
 
 //        SETTER FILM2
         film2.setTitre("Avatar 2");
         film2.setRealisateur("James Cameron");
-        film2.setDateSortie("2022-12-14");
+        film2.setDateSortie(LocalDate.of(2022, 12, 14));
         film2.setGenre("Action");
 
         System.out.println(film1);
