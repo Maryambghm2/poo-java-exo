@@ -56,13 +56,14 @@ public class Joueur {
     public void effectuerUneQuete() {
         this.quete += 1;
         this.points += 10;
+        augmenterNiveau();
     }
 
-    public String augmenterNiveau() {
+    private String augmenterNiveau() {
         if (this.points >= 100) {
-            this.niveau ++;
+            this.niveau++;
             this.points = 0;
-            System.out.println("Le joueur ");
+            System.out.println("Le joueur " + getNom() + " passe au niveau :" + getNiveau());
         }
         return "Le joueur passe au niveau :" + niveau;
 
